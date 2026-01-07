@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weblydo Solutions - Innovative Software IT Solutions for Modern Businesses">
+    <title>Weblydo Solutions</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- English Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Arabic Font - Cairo (Modern & Elegant) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cinematic Opening Animation Overlay -->
+    <div class="intro-overlay" id="intro-overlay" aria-hidden="true">
+        <div class="intro-window">
+            <div class="intro-logo-container">
+                <div class="intro-logo-split">
+                    <span class="logo-part logo-part-left">Web</span>
+                    <span class="logo-part logo-part-right">lydo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+        <div class="nav-container">
+            <!-- Logo - Left Side on Mobile -->
+            <div class="nav-right">
+                <div class="nav-logo" aria-label="Weblydo Solutions">
+                    <span class="logo-text">Weblydo</span>
+                </div>
+            </div>
+
+            <!-- Hamburger Menu Button (Mobile Only) -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navigation Links - Center -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About Us</a></li>
+                <li><a href="#solutions" class="nav-link" data-i18n="nav.services">Our Services</a></li>
+                <li><a href="#demo" class="nav-link" data-i18n="nav.work">Our Work</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact Us</a></li>
+            </ul>
+
+           <!-- Language Switcher -->
+           <div class="nav-language-switcher">
+               <button class="lang-switcher-btn" id="lang-switcher" aria-label="Switch language">
+                   <span class="lang-current" id="lang-current">EN</span>
+                   <span class="lang-separator">/</span>
+                   <span class="lang-other" id="lang-other">AR</span>
+               </button>
+           </div>
+
+           <!-- Social Media Icons and Contact Button - Left Side -->
+           <div class="nav-social">
+            <a href="https://www.facebook.com/profile.php?id=61584740201870" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/weblydo/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+            <a href="https://wa.me/970594798282" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+            </a>
+            <!-- <a href="#contact" class="btn-contact">
+                <span>Contact Us</span>
+                <svg class="rtl:mr-2 rtl:ml-0 ltr:ml-2 ltr:mr-0 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+            </a> -->
+
+            <a href="#contact" class="btn-contact-green">
+                <span data-i18n="nav.contact">Contact Us</span>
+                <svg class="contact-icon-up" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path>
+                </svg>
+            </a>
+        </div>
+
+        </div>
+    </nav>
+
+    <!-- Spider Network Effect -->
+    <div class="spider-network-container">
+        <canvas id="spider-network-left" class="spider-network-canvas spider-network-left"></canvas>
+        <canvas id="spider-network-right" class="spider-network-canvas spider-network-right"></canvas>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <!-- Animated Background -->
+            <div class="hero-background">
+                <!-- Animated Blob Shadows -->
+                <div class="blob-shadow blob-shadow-1"></div>
+                <div class="blob-shadow blob-shadow-2"></div>
+                <div class="blob-shadow blob-shadow-3"></div>
+                
+                <div class="animated-particles"></div>
+                <div class="geometric-pattern"></div>
+            </div>
+
+            <div class="hero-container">
+                <!-- Hero Content -->
+            <div class="hero-content">
+                    <h1 class="hero-headline fade-in-up" data-delay="0">
+                        <span data-i18n="hero.headline.prefix">We design</span> <span class="innovative-text" data-i18n="hero.headline.highlight">innovative</span> <span data-i18n="hero.headline.suffix">digital solutions</span>
+                    </h1>
+                    <p class="hero-subheadline fade-in-up" data-delay="200" data-i18n="hero.subheadline">
+                        Elevate your business level
+                    </p>
+
+                    <!-- Services Description -->
+                    <div class="hero-services fade-in-up" data-delay="400">
+                        <div class="services-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <p class="services-text" data-i18n="hero.services">
+                            We develop websites and applications with efficiency and attention to detail, from design to programming. We provide digital solutions tailored to your needs.
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons fade-in-up" data-delay="600">
+                        <a href="#contact" class="btn-hero btn-hero-primary">
+                            <span data-i18n="hero.btn.start">Start Your Project Now</span>
+                            <svg class="rocket-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                            </svg>
+                        </a>
+                        <a href="#solutions" class="btn-hero btn-hero-secondary">
+                            <span data-i18n="hero.btn.explore">Explore Our Services</span>
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Statistics Section -->
+                <div class="hero-stats fade-in-up" data-delay="800">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label" data-i18n="hero.stat.experience">years of local experience</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label" data-i18n="hero.stat.clients">clients from business leaders</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label" data-i18n="hero.stat.projects">successful projects in the Gulf</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Code Icons -->
+            <div class="floating-icon floating-code-icon floating-code-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+            </div>
+            <div class="floating-icon floating-code-icon floating-code-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+            </div>
+            <div class="floating-icon floating-code-icon floating-code-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+            </div>
+            <div class="floating-icon floating-code-icon floating-code-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+            </div>
+
+            <!-- Floating Rocket Icons -->
+            <div class="floating-icon floating-rocket-icon floating-rocket-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                </svg>
+            </div>
+            <div class="floating-icon floating-rocket-icon floating-rocket-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                </svg>
+            </div>
+            <div class="floating-icon floating-rocket-icon floating-rocket-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                </svg>
+            </div>
+
+            <!-- Seamless Color Transition Wave -->
+            <div class="hero-wave-transition">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="heroToSolutionsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#1a3d5c" />
+                            <stop offset="100%" stop-color="#141b3d" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Large, soft, organic wave path -->
+                    <path d="M0,90 C240,40 480,100 720,50 C880,20 1040,75 1200,35 C1320,10 1380,50 1440,60 L1440,120 L0,120 Z" 
+                          fill="url(#heroToSolutionsGradient)"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <!-- Section 1: Header -->
+                <div class="about-header">
+                    <p class="about-subheadline" data-animate="fade-up" data-i18n="about.subheadline">Who We Are</p>
+                    <h2 class="about-title" data-animate="fade-up" data-delay="100" data-i18n="about.title">About WeblyDo</h2>
+                    <p class="about-description" data-animate="fade-up" data-delay="200" data-i18n="about.description">
+                        We are a passionate team of developers, designers, and innovators dedicated to crafting exceptional digital experiences. 
+                        With years of expertise in web development and cutting-edge technologies, we transform ideas into powerful, scalable solutions 
+                        that drive business growth and exceed expectations.
+                    </p>
+                </div>
+
+                <!-- Section 2: The Story -->
+                <div class="about-story">
+                    <!-- Background Effect -->
+                    <div class="story-background-effect"></div>
+                    
+                    <div class="story-milestones">
+                        <h3 class="story-title" data-i18n="about.story.title">Our Journey</h3>
+                        <div class="milestones-list">
+                            <div class="milestone-item" data-animate="fade-up" data-delay="0">
+                                <div class="milestone-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="milestone-content">
+                                    <h4 class="milestone-title" data-i18n="about.milestone.founded.title">2014 - Founded</h4>
+                                    <p class="milestone-description" data-i18n="about.milestone.founded.desc">Started with a vision to revolutionize digital experiences in the Gulf region.</p>
+                                </div>
+                            </div>
+                            <div class="milestone-item" data-animate="fade-up" data-delay="100">
+                                <div class="milestone-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="milestone-content">
+                                    <h4 class="milestone-title" data-i18n="about.milestone.clients.title">2017 - First 100 Clients</h4>
+                                    <p class="milestone-description" data-i18n="about.milestone.clients.desc">Reached a milestone of 100 satisfied clients across various industries.</p>
+                                </div>
+                            </div>
+                            <div class="milestone-item" data-animate="fade-up" data-delay="200">
+                                <div class="milestone-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <div class="milestone-content">
+                                    <h4 class="milestone-title" data-i18n="about.milestone.expansion.title">2020 - Team Expansion</h4>
+                                    <p class="milestone-description" data-i18n="about.milestone.expansion.desc">Expanded our team to 50+ talented professionals specializing in modern technologies.</p>
+                                </div>
+                            </div>
+                            <div class="milestone-item" data-animate="fade-up" data-delay="300">
+                                <div class="milestone-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="milestone-content">
+                                    <h4 class="milestone-title" data-i18n="about.milestone.leader.title">2024 - Innovation Leader</h4>
+                                    <p class="milestone-description" data-i18n="about.milestone.leader.desc">Recognized as a leading digital solutions provider with 150+ successful projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-visual">
+                        <!-- Abstract 3D Graphic - Top Right -->
+                        <div class="abstract-3d-graphic">
+                            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="blockGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#4f9cf9" />
+                                        <stop offset="100%" stop-color="#00d4ff" />
+                                    </linearGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <!-- Glowing particles/dots -->
+                                <circle cx="80" cy="60" r="3" fill="#4f9cf9" opacity="0.6" filter="url(#glow)"/>
+                                <circle cx="220" cy="80" r="2" fill="#00d4ff" opacity="0.7" filter="url(#glow)"/>
+                                <circle cx="180" cy="140" r="2.5" fill="#4f9cf9" opacity="0.5" filter="url(#glow)"/>
+                                <circle cx="240" cy="120" r="2" fill="#00d4ff" opacity="0.6" filter="url(#glow)"/>
+                                <!-- 3D Isometric blocks with network connections -->
+                                <g transform="translate(150,100)">
+                                    <!-- Block 1 -->
+                                    <path d="M-40,-30 L0,-50 L40,-30 L0,-10 Z" fill="url(#blockGradient)" opacity="0.7" filter="url(#glow)"/>
+                                    <path d="M0,-10 L40,-30 L40,10 L0,30 Z" fill="url(#blockGradient)" opacity="0.5" filter="url(#glow)"/>
+                                    <path d="M-40,-30 L0,-10 L0,30 L-40,10 Z" fill="url(#blockGradient)" opacity="0.4" filter="url(#glow)"/>
+                                    
+                                    <!-- Block 2 -->
+                                    <path d="M20,-10 L60,-30 L100,-10 L60,10 Z" fill="url(#blockGradient)" opacity="0.6" filter="url(#glow)"/>
+                                    <path d="M60,10 L100,-10 L100,30 L60,50 Z" fill="url(#blockGradient)" opacity="0.4" filter="url(#glow)"/>
+                                    
+                                    <!-- Connecting lines -->
+                                    <line x1="0" y1="-10" x2="60" y2="10" stroke="url(#blockGradient)" stroke-width="1.5" opacity="0.3" filter="url(#glow)"/>
+                                    <line x1="40" y1="-30" x2="60" y2="-30" stroke="url(#blockGradient)" stroke-width="1.5" opacity="0.3" filter="url(#glow)"/>
+                                </g>
+                            </svg>
+                        </div>
+                        
+                        <div class="brand-logo">
+                            <div class="brand-logo-text">
+                                <span class="brand-logo-part">Weblydo</span>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-tagline">
+                            <h3 class="tagline-text" data-i18n="about.tagline">Empowering Digital Experiences</h3>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Section 3: Core Values -->
+                <div class="about-values">
+                    <h3 class="values-title" data-i18n="about.values.title">Our Core Values</h3>
+                    <div class="values-container">
+                        <!-- Connecting Line - Behind Icons -->
+                        <div class="values-connecting-line"></div>
+                        
+                        <!-- Star Icon - Bottom Right -->
+                        <div class="values-star-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="values-grid">
+                            <div class="value-card" data-animate="fade-up" data-delay="0">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/>
+                                        <path d="M13 13l6 6"/>
+                                    </svg>
+                                </div>
+                                <h4 class="value-title" data-i18n="about.values.innovation">Innovation</h4>
+                            </div>
+                            <div class="value-card" data-animate="fade-up" data-delay="100">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="value-title" data-i18n="about.values.quality">Quality</h4>
+                            </div>
+                            <div class="value-card" data-animate="fade-up" data-delay="200">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="value-title" data-i18n="about.values.collaboration">Collaboration</h4>
+                            </div>
+                            <div class="value-card" data-animate="fade-up" data-delay="300">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                        <line x1="12" y1="8" x2="12" y2="16"/>
+                                        <line x1="8" y1="12" x2="16" y2="12"/>
+                                    </svg>
+                                </div>
+                                <h4 class="value-title" data-i18n="about.values.commitment">Commitment</h4>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="#contact" class="btn-about-cta">
+                                <span data-i18n="nav.contact">Contact Us</span>
+                                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: CTA -->
+                
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section class="solutions" id="solutions">
+            <div class="container">
+                <div class="solutions-header">
+                    <h2 class="solutions-title">
+                        <span data-i18n="solutions.title.prefix">Our</span> <span class="solutions-title-highlight" data-i18n="solutions.title.highlight">Solutions</span>
+                    </h2>
+                    <p class="solutions-subtitle" data-i18n="solutions.subtitle">Comprehensive IT services tailored to your business needs</p>
+                </div>
+                <div class="solutions-grid">
+                    <!-- Top Row: Left narrower, Right wider -->
+                    <div class="solution-card solution-card-narrow" data-animate="fade-up" data-delay="0">
+                        <div class="card-icon-square">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title" data-i18n="solutions.website.title">Website Development</h3>
+                        <p class="card-description" data-i18n="solutions.website.desc">High-performance, responsive websites built with modern technologies to deliver seamless user experiences and represent your brand with clarity and impact.</p>
+                        <a href="#contact" class="card-link"><span data-i18n="solutions.website.link">Learn More</span> <span class="link-arrow">»</span></a>
+                    </div>
+                    <div class="solution-card solution-card-wide" data-animate="fade-up" data-delay="100">
+                        <div class="card-icon-square">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title" data-i18n="solutions.landing.title">Animated Landing Pages</h3>
+                        <p class="card-description" data-i18n="solutions.landing.desc">High-impact landing pages with smooth animations designed to engage users and drive conversions.</p>
+                        <a href="#contact" class="card-link"><span data-i18n="solutions.landing.link">Learn More</span> <span class="link-arrow">»</span></a>
+                    </div>
+                    <!-- Bottom Row: Left wider, Right narrower -->
+                    <div class="solution-card solution-card-wide" data-animate="fade-up" data-delay="200">
+                        <div class="card-icon-square">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title" data-i18n="solutions.cloud.title">Cloud Infrastructure & QA Automation</h3>
+                        <p class="card-description" data-i18n="solutions.cloud.desc">Scalable cloud solutions with automated testing to ensure performance, security, and reliability.</p>
+                        <a href="#contact" class="card-link"><span data-i18n="solutions.cloud.link">Learn More</span> <span class="link-arrow">»</span></a>
+                    </div>
+                    <div class="solution-card solution-card-narrow" data-animate="fade-up" data-delay="300">
+                        <div class="card-icon-square">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title" data-i18n="solutions.app.title">Application Development</h3>
+                        <p class="card-description" data-i18n="solutions.app.desc">Scalable web and mobile applications engineered to solve real business problems, optimize workflows, and grow alongside your organization.</p>
+                        <a href="#contact" class="card-link"><span data-i18n="solutions.app.link">Learn More</span> <span class="link-arrow">»</span></a>
+                    </div>
+                </div>
+                <div class="solutions-cta">
+                    <a href="#contact" class="btn-solutions-cta">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            <line x1="9" y1="10" x2="15" y2="10"></line>
+                            <line x1="12" y1="7" x2="12" y2="13"></line>
+                        </svg>
+                        <span data-i18n="solutions.cta">Request Free Technical Consultation</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Methodology Section -->
+        <section class="work-methodology" id="methodology">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="methodology-header">
+                    <h2 class="methodology-title" data-i18n="methodology.title">Work Methodology</h2>
+                    <p class="methodology-subtitle" data-i18n="methodology.subtitle">We follow a studied and systematic methodology to ensure the best results and meet our clients' expectations.</p>
+                </div>
+
+                <!-- Process Workflow -->
+                <div class="methodology-grid-wrapper">
+                    <svg class="methodology-connector-svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="rgba(79, 156, 249, 0.6)" />
+                                <stop offset="50%" stop-color="rgba(79, 156, 249, 0.8)" />
+                                <stop offset="100%" stop-color="rgba(79, 156, 249, 0.6)" />
+                            </linearGradient>
+                            <radialGradient id="ballGradient" cx="50%" cy="50%">
+                                <stop offset="0%" stop-color="rgba(79, 156, 249, 1)" />
+                                <stop offset="100%" stop-color="rgba(79, 156, 249, 0.8)" />
+                            </radialGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                            <filter id="ballGlow">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <path id="connector-path" class="connector-path" d="M 100 200 L 400 240 L 700 280 M 700 280 L 700 380 M 700 380 L 100 420 M 100 420 L 100 520 M 100 520 L 400 560 L 700 600" 
+                              fill="none" 
+                              stroke="url(#pathGradient)" 
+                              stroke-width="3" 
+                              stroke-linecap="round" 
+                              stroke-linejoin="round"
+                              filter="url(#glow)"/>
+                        <circle class="path-ball" r="8" fill="url(#ballGradient)" filter="url(#ballGlow)">
+                            <animateMotion dur="6s" repeatCount="indefinite" begin="1s">
+                                <mpath href="#connector-path"/>
+                            </animateMotion>
+                        </circle>
+                    </svg>
+                    <div class="methodology-grid">
+                    <!-- Step 1: Discovery Phase (Blue) -->
+                    <div class="methodology-card" data-animate="fade-up" data-delay="0">
+                        <div class="methodology-badge methodology-badge-blue">1</div>
+                        <div class="methodology-icon-container methodology-icon-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="M21 21l-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-card-title" data-i18n="methodology.phase.discovery.title">Discovery Phase</h3>
+                        <p class="methodology-card-description" data-i18n="methodology.phase.discovery.desc">We start by understanding your goals, target audience, and project requirements through in-depth consultations.</p>
+                        <a href="#contact" class="methodology-card-link"><span data-i18n="methodology.phase.discovery.link">Details</span> <span>>></span></a>
+                    </div>
+
+                    <!-- Step 2: Planning Phase (Purple) -->
+                    <div class="methodology-card" data-animate="fade-up" data-delay="100">
+                        <div class="methodology-badge methodology-badge-purple">2</div>
+                        <div class="methodology-icon-container methodology-icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-card-title" data-i18n="methodology.phase.planning.title">Planning Phase</h3>
+                        <p class="methodology-card-description" data-i18n="methodology.phase.planning.desc">Our team creates a detailed roadmap including timelines, milestones, and resource allocation.</p>
+                        <a href="#contact" class="methodology-card-link"><span data-i18n="methodology.phase.planning.link">Details</span> <span>>></span></a>
+                    </div>
+
+                    <!-- Step 3: Design Phase (Pink) -->
+                    <div class="methodology-card" data-animate="fade-up" data-delay="200">
+                        <div class="methodology-badge methodology-badge-pink">3</div>
+                        <div class="methodology-icon-container methodology-icon-pink">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-card-title" data-i18n="methodology.phase.design.title">Design Phase</h3>
+                        <p class="methodology-card-description" data-i18n="methodology.phase.design.desc">We design user-friendly interfaces (UI/UX) that align with your brand identity and user needs.</p>
+                        <a href="#contact" class="methodology-card-link"><span data-i18n="methodology.phase.design.link">Details</span> <span>>></span></a>
+                    </div>
+
+                    <!-- Step 4: Development Phase (Green) -->
+                    <div class="methodology-card" data-animate="fade-up" data-delay="300">
+                        <div class="methodology-badge methodology-badge-green">4</div>
+                        <div class="methodology-icon-container methodology-icon-green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-card-title" data-i18n="methodology.phase.development.title">Development Phase</h3>
+                        <p class="methodology-card-description" data-i18n="methodology.phase.development.desc">Our developers build your solution using clean, scalable, and modern code standards.</p>
+                        <a href="#contact" class="methodology-card-link"><span data-i18n="methodology.phase.development.link">Details</span> <span>>></span></a>
+                    </div>
+
+                    <!-- Step 5: Testing Phase (Yellow) -->
+                    <div class="methodology-card" data-animate="fade-up" data-delay="400">
+                        <div class="methodology-badge methodology-badge-yellow">5</div>
+                        <div class="methodology-icon-container methodology-icon-yellow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-card-title" data-i18n="methodology.phase.testing.title">Testing Phase</h3>
+                        <p class="methodology-card-description" data-i18n="methodology.phase.testing.desc">We ensure product quality through comprehensive testing to eliminate bugs and ensure security/performance.</p>
+                        <a href="#contact" class="methodology-card-link"><span data-i18n="methodology.phase.testing.link">Details</span> <span>>></span></a>
+                    </div>
+
+                    <!-- Step 6: Launch Phase (Red) -->
+                    <div class="methodology-card" data-animate="fade-up" data-delay="500">
+                        <div class="methodology-badge methodology-badge-red">6</div>
+                        <div class="methodology-icon-container methodology-icon-red">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-card-title" data-i18n="methodology.phase.launch.title">Launch Phase</h3>
+                        <p class="methodology-card-description" data-i18n="methodology.phase.launch.desc">We deploy your product smoothly, ensuring everything runs perfectly in the live environment.</p>
+                        <a href="#contact" class="methodology-card-link"><span data-i18n="methodology.phase.launch.link">Details</span> <span>>></span></a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="methodology-cta">
+                    <h3 class="methodology-cta-title" data-i18n="methodology.cta.title">Ready to start your project with us?</h3>
+                    <p class="methodology-cta-subtitle" data-i18n="methodology.cta.subtitle">Our team is excited to work with you and turn your ideas into reality.</p>
+                    <a href="#contact" class="methodology-cta-button" data-i18n="methodology.cta.button">Start Now</a>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Interactive Demo Section -->
+        <section class="demo" id="demo">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2 class="section-title" data-i18n="demo.title">Explore Our Platform</h2>
+                    <p class="section-subtitle" data-i18n="demo.subtitle">Discover the powerful features that drive your business forward</p>
+                </div>
+                <div class="demo-container" data-animate="fade-up" data-delay="100">
+                    <div class="demo-tabs" role="tablist" aria-label="Feature tabs">
+                        <button class="demo-tab active" role="tab" aria-selected="true" aria-controls="demo-dashboard" data-tab="dashboard" id="tab-dashboard">
+                            <span class="tab-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7"/>
+                                    <rect x="14" y="3" width="7" height="7"/>
+                                    <rect x="14" y="14" width="7" height="7"/>
+                                    <rect x="3" y="14" width="7" height="7"/>
+                                </svg>
+                            </span>
+                            <span class="tab-label" data-i18n="demo.dashboard.label">Dashboard</span>
+                        </button>
+                        <button class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-analytics" data-tab="analytics" id="tab-analytics">
+                            <span class="tab-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 6 13.5 14.5 8.5 9.5 2 18"/>
+                                    <polyline points="16 6 22 6 22 12"/>
+                                </svg>
+                            </span>
+                            <span class="tab-label" data-i18n="demo.analytics.label">Analytics</span>
+                        </button>
+                        <button class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-reports" data-tab="reports" id="tab-reports">
+                            <span class="tab-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10 9 9 9 8 9"/>
+                                </svg>
+                            </span>
+                            <span class="tab-label" data-i18n="demo.reports.label">Reports</span>
+                        </button>
+                        <button class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-integrations" data-tab="integrations" id="tab-integrations">
+                            <span class="tab-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="18" cy="5" r="3"/>
+                                    <circle cx="6" cy="12" r="3"/>
+                                    <circle cx="18" cy="19" r="3"/>
+                                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                                </svg>
+                            </span>
+                            <span class="tab-label" data-i18n="demo.integrations.label">Integrations</span>
+                        </button>
+                    </div>
+                    <div class="demo-content">
+                        <div class="demo-panel active" id="demo-dashboard" role="tabpanel" aria-labelledby="tab-dashboard">
+                            <div class="demo-image">
+                                <div class="demo-placeholder dashboard-placeholder">
+                                    <div class="placeholder-content">
+                                        <div class="placeholder-header">
+                                            <div class="placeholder-dot"></div>
+                                            <div class="placeholder-dot"></div>
+                                            <div class="placeholder-dot"></div>
+                                        </div>
+                                        <div class="placeholder-grid">
+                                            <div class="placeholder-card"></div>
+                                            <div class="placeholder-card"></div>
+                                            <div class="placeholder-card"></div>
+                                            <div class="placeholder-card"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-text">
+                                <h3 class="demo-title" data-i18n="demo.dashboard.title">Real-Time Dashboard</h3>
+                                <p class="demo-description" data-i18n="demo.dashboard.desc">Monitor your business metrics in real-time with our intuitive dashboard. Get instant insights into performance, revenue, and key indicators all in one place.</p>
+                            </div>
+                        </div>
+                        <div class="demo-panel" id="demo-analytics" role="tabpanel" aria-labelledby="tab-analytics" hidden>
+                            <div class="demo-image">
+                                <div class="demo-placeholder analytics-placeholder">
+                                    <div class="placeholder-content">
+                                        <div class="placeholder-chart">
+                                            <div class="chart-bar" style="height: 60%"></div>
+                                            <div class="chart-bar" style="height: 80%"></div>
+                                            <div class="chart-bar" style="height: 45%"></div>
+                                            <div class="chart-bar" style="height: 90%"></div>
+                                            <div class="chart-bar" style="height: 70%"></div>
+                                            <div class="chart-bar" style="height: 55%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-text">
+                                <h3 class="demo-title" data-i18n="demo.analytics.title">Advanced Analytics</h3>
+                                <p class="demo-description" data-i18n="demo.analytics.desc">Dive deep into your data with powerful analytics tools. Track trends, identify patterns, and make data-driven decisions with comprehensive reporting.</p>
+                            </div>
+                        </div>
+                        <div class="demo-panel" id="demo-reports" role="tabpanel" aria-labelledby="tab-reports" hidden>
+                            <div class="demo-image">
+                                <div class="demo-placeholder reports-placeholder">
+                                    <div class="placeholder-content">
+                                        <div class="placeholder-document">
+                                            <div class="doc-line"></div>
+                                            <div class="doc-line"></div>
+                                            <div class="doc-line short"></div>
+                                            <div class="doc-line"></div>
+                                            <div class="doc-line short"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-text">
+                                <h3 class="demo-title" data-i18n="demo.reports.title">Custom Reports</h3>
+                                <p class="demo-description" data-i18n="demo.reports.desc">Generate detailed reports tailored to your needs. Export data in multiple formats and schedule automated reports to keep stakeholders informed.</p>
+                            </div>
+                        </div>
+                        <div class="demo-panel" id="demo-integrations" role="tabpanel" aria-labelledby="tab-integrations" hidden>
+                            <div class="demo-image">
+                                <div class="demo-placeholder integrations-placeholder">
+                                    <div class="placeholder-content">
+                                        <div class="placeholder-connections">
+                                            <div class="connection-node"></div>
+                                            <div class="connection-node"></div>
+                                            <div class="connection-node"></div>
+                                            <div class="connection-line"></div>
+                                            <div class="connection-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-text">
+                                <h3 class="demo-title" data-i18n="demo.integrations.title">Seamless Integrations</h3>
+                                <p class="demo-description" data-i18n="demo.integrations.desc">Connect with your favorite tools and services. Our platform integrates with hundreds of popular apps to streamline your workflow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2 class="section-title" data-i18n="testimonials.title">What Our Clients Say</h2>
+                    <p class="section-subtitle" data-i18n="testimonials.subtitle">Trusted by businesses worldwide to deliver exceptional results</p>
+                </div>
+                <div class="testimonials-carousel-wrapper" data-animate="fade-up" data-delay="100">
+                    <div class="testimonials-carousel">
+                        <button class="carousel-btn carousel-btn-prev" aria-label="Previous testimonial" id="carousel-prev">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="15 18 9 12 15 6"/>
+                            </svg>
+                        </button>
+                        <div class="carousel-track">
+                            <div class="carousel-container">
+                                <div class="testimonial-card active">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-quote">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                                            </svg>
+                                        </div>
+                                        <p class="testimonial-text" data-i18n-testimonial="0.text">Weblydo Solutions transformed our entire digital infrastructure. Their team's expertise and attention to detail exceeded our expectations. We've seen a 40% increase in operational efficiency since implementing their solutions.</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar">
+                                                <div class="avatar-placeholder">SA</div>
+                                            </div>
+                                            <div class="author-info">
+                                                <div class="author-name" data-i18n-testimonial="0.author">Sarah Al-Dosari</div>
+                                                <div class="author-role" data-i18n-testimonial="0.role">Jewelry Designer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-quote">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                                            </svg>
+                                        </div>
+                                        <p class="testimonial-text" data-i18n-testimonial="1.text">The custom development work from Weblydo has been outstanding. They understood our unique requirements and delivered a solution that perfectly fits our business model. Their support throughout the project was exceptional.</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar">
+                                                <div class="avatar-placeholder">MA</div>
+                                            </div>
+                                            <div class="author-info">
+                                                <div class="author-name" data-i18n-testimonial="1.author">Mahmoud Amr</div>
+                                                <div class="author-role" data-i18n-testimonial="1.role">Business Owner</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-quote">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                                            </svg>
+                                        </div>
+                                        <p class="testimonial-text" data-i18n-testimonial="2.text">Working with Weblydo has been a game-changer for our company. Their cloud infrastructure solutions have improved our scalability and reduced costs significantly. Highly professional team with deep technical knowledge.</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar">
+                                                <div class="avatar-placeholder">MA</div>
+                                            </div>
+                                            <div class="author-info">
+                                                <div class="author-name" data-i18n-testimonial="2.author">Raed Hijawi</div>
+                                                <div class="author-role" data-i18n-testimonial="2.role">Operations Director, Jawwal Solutions</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-quote">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                                            </svg>
+                                        </div>
+                                        <p class="testimonial-text" data-i18n-testimonial="3.text">The mobile application developed by Weblydo has received excellent feedback from our users. The user experience is smooth, intuitive, and the performance is outstanding. They truly understand modern app development.</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar">
+                                                <div class="avatar-placeholder">BA</div>
+                                            </div>
+                                            <div class="author-info">
+                                                <div class="author-name" data-i18n-testimonial="3.author">Burhan Azem</div>
+                                                <div class="author-role" data-i18n-testimonial="3.role">Product Manager, Foothills Technology</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-quote">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                                            </svg>
+                                        </div>
+                                        <p class="testimonial-text" data-i18n-testimonial="4.text">Weblydo's consulting services helped us make critical technology decisions. Their strategic guidance and technical expertise enabled us to modernize our infrastructure while minimizing disruption to our operations.</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar">
+                                                <div class="avatar-placeholder">AM</div>
+                                            </div>
+                                            <div class="author-info">
+                                                <div class="author-name" data-i18n-testimonial="4.author">Alexandra Martinez</div>
+                                                <div class="author-role" data-i18n-testimonial="4.role">VP of Technology, Enterprise Systems</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn-next" aria-label="Next testimonial" id="carousel-next">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators" role="tablist" aria-label="Testimonial indicators">
+                        <button class="indicator active" aria-label="Go to testimonial 1" data-index="0" role="tab" aria-selected="true"></button>
+                        <button class="indicator" aria-label="Go to testimonial 2" data-index="1" role="tab" aria-selected="false"></button>
+                        <button class="indicator" aria-label="Go to testimonial 3" data-index="2" role="tab" aria-selected="false"></button>
+                        <button class="indicator" aria-label="Go to testimonial 4" data-index="3" role="tab" aria-selected="false"></button>
+                        <button class="indicator" aria-label="Go to testimonial 5" data-index="4" role="tab" aria-selected="false"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-content" data-animate="fade-up">
+                    <h2 class="section-title" data-i18n="contact.title">Let's Build Something Great</h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Ready to transform your business with innovative software solutions? Get in touch with our team.</p>
+                    <form class="contact-form" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-i18n="contact.form.name">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-required="true" data-i18n-placeholder="contact.form.name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label" data-i18n="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-required="true" data-i18n-placeholder="contact.form.email">
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp" class="form-label" data-i18n="contact.form.whatsapp">WhatsApp Number</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" class="form-input" aria-required="false" data-i18n-placeholder="contact.form.whatsapp">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-i18n="contact.form.message">Message</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="5" required aria-required="true" data-i18n-placeholder="contact.form.message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" data-i18n="contact.form.submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta" id="final-cta">
+            <div class="container">
+                <div class="cta-content" data-animate="fade-up">
+                    <h2 class="cta-title" data-i18n="finalCta.title">Ready to Transform Your Business?</h2>
+                    <p class="cta-subtitle" data-i18n="finalCta.subtitle">Join hundreds of companies that trust Weblydo Solutions to power their digital transformation</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="cta-button cta-primary" id="main-cta-button">
+                            <span class="button-text" data-i18n="finalCta.primary">Get Started Today</span>
+                            <span class="button-glow"></span>
+                            <canvas class="particle-canvas" aria-hidden="true"></canvas>
+                        </a>
+                        <a href="#solutions" class="cta-button cta-secondary" data-i18n="finalCta.secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">Weblydo</span>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Innovative Software Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#solutions" class="footer-link" data-i18n="footer.solutions">Solutions</a>
+                    <a href="#about" class="footer-link" data-i18n="footer.about">About</a>
+                    <a href="#contact" class="footer-link" data-i18n="footer.contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 Weblydo Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor Effect Elements -->
+    <div class="cursor-wrapper" id="cursor-wrapper">
+        <!-- Main cursor circle -->
+        <div class="cursor-circle" id="cursor-circle"></div>
+        
+        <!-- Secondary circle for lag effect -->
+        <div class="cursor-circle-secondary" id="cursor-circle-secondary"></div>
+        
+        <!-- Trail circles container -->
+        <div class="cursor-trail" id="cursor-trail"></div>
+        
+        <!-- Particles container -->
+        <div class="cursor-particles" id="cursor-particles"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
