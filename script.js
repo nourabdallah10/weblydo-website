@@ -362,18 +362,18 @@ const initFormHandling = () => {
             
             if (response.ok && result.success) {
                 // Success
-                submitButton.textContent = 'Message Sent!';
-                submitButton.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-                
-                // Reset form
-                contactForm.reset();
-                
-                // Reset button after 3 seconds
-                setTimeout(() => {
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
+            submitButton.textContent = 'Message Sent!';
+            submitButton.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
                     submitButton.style.background = originalBackground;
-                }, 3000);
+            }, 3000);
             } else {
                 // Error from API
                 throw new Error(result.message || 'Failed to send message');
@@ -1888,20 +1888,20 @@ const translations = {
             },
             milestone: {
                 founded: {
-                    title: "2014 - Founded",
+                    title: "2022 - Founded",
                     desc: "Started with a vision to revolutionize digital experiences in the Gulf region."
                 },
                 clients: {
-                    title: "2017 - First 100 Clients",
-                    desc: "Reached a milestone of 100 satisfied clients across various industries."
+                    title: "2023 - First 20 Clients",
+                    desc: "Reached a milestone of 20 satisfied clients across various industries."
                 },
                 expansion: {
-                    title: "2020 - Team Expansion",
-                    desc: "Expanded our team to 50+ talented professionals specializing in modern technologies."
+                    title: "2025 - Team Expansion",
+                    desc: "Expanded our team to 8+ talented professionals specializing in modern technologies."
                 },
                 leader: {
-                    title: "2024 - Innovation Leader",
-                    desc: "Recognized as a leading digital solutions provider with 250+ successful projects."
+                    title: "2026 - Innovation Leader",
+                    desc: "Recognized as a leading digital solutions provider with 150+ successful projects."
                 }
             },
             tagline: "Empowering Digital Experiences",
@@ -2114,20 +2114,20 @@ const translations = {
             },
             milestone: {
                 founded: {
-                    title: "2014 - التأسيس",
+                    title: "2022 - التأسيس",
                     desc: "بدأنا برؤية لإحداث ثورة في التجارب الرقمية في منطقة الخليج."
                 },
                 clients: {
-                    title: "2017 - أول 100 عميل",
-                    desc: "وصلنا إلى معلم 100 عميل راضٍ عبر مختلف الصناعات."
+                    title: "2023 - أول 20 عميل",
+                    desc: "وصلنا إلى معلم 20 عميلاً راضياً عبر مختلف الصناعات."
                 },
                 expansion: {
-                    title: "2020 - توسيع الفريق",
-                    desc: "وسعنا فريقنا إلى أكثر من 50 محترفاً موهوباً متخصصاً في التقنيات الحديثة."
+                    title: "2025 - توسيع الفريق",
+                    desc: "وسعنا فريقنا إلى أكثر من 8 محترفين موهوبين متخصصين في التقنيات الحديثة."
                 },
                 leader: {
-                    title: "2024 - رائد الابتكار",
-                    desc: "معترف بنا كمزود رائد للحلول الرقمية مع أكثر من 250 مشروعاً ناجحاً."
+                    title: "2026 - رائد الابتكار",
+                    desc: "معترف بنا كمزود رائد للحلول الرقمية مع أكثر من 150 مشروعاً ناجحاً."
                 }
             },
             tagline: "تمكين التجارب الرقمية",

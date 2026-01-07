@@ -2146,7 +2146,7 @@ section {
 .about-values {
     position: relative;
     margin-bottom: 0;
-    padding: 0 var(--spacing-md);
+    padding: 0 !important;
     background: transparent;
     border-radius: 20px;
     overflow-x: hidden !important;
@@ -2216,8 +2216,8 @@ section {
     box-sizing: border-box;
     overflow-x: hidden !important;
     overflow: hidden;
-    padding-left: var(--spacing-md);
-    padding-right: var(--spacing-md);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 /* Connecting Line - Behind Icons */
@@ -5194,6 +5194,7 @@ section {
     
     .about-values {
         margin-top: var(--spacing-lg);
+        padding: 0 !important;
     }
     
     .values-grid {
@@ -5756,7 +5757,7 @@ section {
         width: 16px;
         height: 16px;
     }
-}
+
 
 /* ============================================
    Spider Network Effect - Background Animation
